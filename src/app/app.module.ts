@@ -11,11 +11,13 @@ import { DataServiceService } from './data-service.service';
 import { MyAppComponentComponent } from './my-app-component/my-app-component.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { ComponentSearchComponent } from './component-search/component-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyAppComponentComponent,
+    ComponentSearchComponent,
   ],
   imports: [
     BrowserModule,
