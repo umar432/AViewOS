@@ -1,118 +1,529 @@
-<div class="container-fluid">
+<div class="container-fluid" >
+    
+      
   <ng-container *ngIf="cardexist"> 
 
      <!--/.Carousel Wrapper-->
-     <h3 style="margin:15px 0;">Title</h3>
+     <h3 style="margin:15px 0;">TRENDING</h3>
          
-     <!-- <div *ngFor="let arr of testcitiesarr;let i=index">
-      {{i}}
-        <p>{{arr.name}}</p>
-        <p>{{arr.details}}</p>
-      </div>  -->
+     
     <!--Carousel Wrapper-->
-    <div id="multi-item-example-2" class="carousel slide carousel-multi-item" data-ride="carousel">
+    <!-- Card group -->
+<div class="card-group" height= "320" width = "300" >
+
+  <!-- Card -->
+  <div class="card mb-4"  >
+    <div class="cellContainer">
+    <!-- Card image -->
+    <div class="view overlay">
+      
+      <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/london_large.jpg" alt="Card image cap"
+      
+      alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+   
+  
+
+    <!-- Card content -->
+    <div class="card-body">
+
+      <!-- Title -->
+      <h4 class="card-title">London</h4>
+      <!-- Text -->
+         <p class="card-text" > Red buses and black cabs, West End theatres, East End grit and more...</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary btn-md">9000 AVIOS</button>
+
+    </div>
+    <!-- Card content -->
+
+  </div>
+  <!-- Card -->
+  </div>
+    <!-- Card -->
+    <div class="card mb-4">
+        <div class="cellContainer">
+        <!-- Card image -->
+        <div class="view overlay">
+          
+          <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/amsterdam_large.jpg" alt="Card image cap"
+          
+          alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+       
+      
     
-      <!--Controls
-      <div class="controls-top text-center">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-      </div>
-      Controls-->
+        <!-- Card content -->
+        <div class="card-body">
     
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-    
-        <!--First "https://maps.avios.com/{{arr.images[2].src}}"slide-->
-        <div class="carousel-item active" >
-    
-          <div class="col-md-3" *ngFor="let arr of testcitiesarr;let i=index">
-            <div class="card mb-2">
-              <img class="card-img-top" src="https://maps.avios.com/{{arr.images[0].src}}"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">{{arr.name}}</h4>
-                <p class="card-text">{{arr.details}}</p>
-              </div>
-            </div>
-          </div>
-    
+          <!-- Title -->
+          <h4 class="card-title">Amsterdam</h4>
+          <!-- Text -->
+             <p class="card-text" > The Hermitage gallery, Van Gogh Museum, Anne Frank house and more...</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md">7800 AVIOS</button>
     
         </div>
-        <!--/.First slide-->
-    
-        <!--Second slide -->
-        <div class="carousel-item">
-            <ng-container  *ngFor="let arr of testcitiesarr;let i=index">
-          <div class="col-md-3" *ngIf="i >= 4"> 
-              
-            <div class="card mb-2">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">{{arr.name}}</h4>
-                <p class="card-text">{{arr.details}}</p>
-              </div>
-            </div>
-          </div>
-            </ng-container>
-    
-        </div>
-      <!--/.Second slide-->
+        <!-- Card content -->
     
       </div>
-      <!--/.Slides-->
+      <!-- Card -->
+      </div>
+  <!-- Card -->
+  <div class="card mb-4">
+      <div class="cellContainer">
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/paris_large.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body">
+      <!-- Title -->
+      <h4 class="card-title">Paris</h4>
+      <!-- Text -->
+      <p class="card-text">Inside-out Centre Pompidou, museums full of world-class art and more....</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary btn-md">8300 AVIOS</button>
+
+    </div>
+    <!-- Card content -->
+
+  </div>
+  <!-- Card -->
+  </div>
+  <!-- Card -->
+  <div class="card mb-4">
+      <div class="cellContainer">
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/rome_large.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body">
+
+      <!-- Title -->
+      <h4 class="card-title">Rome</h4>
+      <!-- Text -->
+      <p class="card-text">cool Italian style, masterpieces in the Vatican's Raphael Rooms and more...</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary btn-md">6000 AVIOS</button>
+
+    </div>
+    <!-- Card content -->
+
+  </div>
+  <!-- Card -->
+  </div>
+</div>
+<!-- Card group -->
+    <!--/.Carousel Wrapper-->
+
+     <!--/.Carousel Wrapper-->
+     <h3 style="margin:15px 0;">TOP AVAILABLE</h3>
+         
+     
+     <div class="card-group" height= "320" width = "300" >
+
+        <!-- Card -->
+        <div class="card mb-4"  >
+          <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/zagreb_large.jpg"
+            
+            alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+         
+        
+      
+          <!-- Card content -->
+          <div class="card-body">
+      
+            <!-- Title -->
+            <h4 class="card-title">Zagreb</h4>
+            <!-- Text -->
+               <p class="card-text" > A classic European capital that remains undiscovered for many,cafes and beer halls and more...</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">5000 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+          <!-- Card -->
+          <div class="card mb-4">
+              <div class="cellContainer">
+              <!-- Card image -->
+              <div class="view overlay">
+                
+                <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/chennai_large.jpg" alt="Card image cap"
+                
+                alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+             
+            
+          
+              <!-- Card content -->
+              <div class="card-body">
+          
+                <!-- Title -->
+                <h4 class="card-title">Chennai</h4>
+                <!-- Text -->
+                   <p class="card-text" > Beyond the rickshaws,the miles of Marina Beach are studded with Tamil statues and more....</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-primary btn-md">6200 AVIOS</button>
+          
+              </div>
+              <!-- Card content -->
+          
+            </div>
+            <!-- Card -->
+            </div>
+        <!-- Card -->
+        <div class="card mb-4">
+            <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/puntacana_large.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!-- Card content -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title">Punta Cana</h4>
+            <!-- Text -->
+            <p class="card-text">Seafront, palm-lined, celebration-endorsed - that's just the golf courses and more....</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">4300 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+        <!-- Card -->
+        <div class="card mb-4">
+            <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/stlucia_large.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!-- Card content -->
+          <div class="card-body">
+      
+            <!-- Title -->
+            <h4 class="card-title">St Lucia</h4>
+            <!-- Text -->
+            <p class="card-text">Hiking, sailing, diving, Pitons, national parks, Sulphur springs, mud pools and more...</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">4600 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+      </div>
+    <!--/.Carousel Wrapper-->
+    <h3 style="margin:15px 0;">USE AVIOS LESS</h3>
+     
+    <div class="card-group" height= "320" width = "300" >
+
+        <!-- Card -->
+        <div class="card mb-4"  >
+          <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/bangkok_large.jpg" alt="Card image cap"
+            
+            alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+         
+        
+      
+          <!-- Card content -->
+          <div class="card-body">
+      
+            <!-- Title -->
+            <h4 class="card-title">Bangkok</h4>
+            <!-- Text -->
+               <p class="card-text" > The airport's a city in itself, a vast international dock linking East and West and more...</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">1500 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+          <!-- Card -->
+          <div class="card mb-4">
+              <div class="cellContainer">
+              <!-- Card image -->
+              <div class="view overlay">
+                
+                <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/barcelona_large.jpg" alt="Card image cap"
+                
+                alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+             
+            
+          
+              <!-- Card content -->
+              <div class="card-body">
+          
+                <!-- Title -->
+                <h4 class="card-title">Barcelona</h4>
+                <!-- Text -->
+                   <p class="card-text" > unique sightseeing , Gaudi masterpieces and tapas bars lining the streets and more...</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-primary btn-md">2800 AVIOS</button>
+          
+              </div>
+              <!-- Card content -->
+          
+            </div>
+            <!-- Card -->
+            </div>
+        <!-- Card -->
+        <div class="card mb-4">
+            <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/munich_large.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!-- Card content -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title">Munich</h4>
+            <!-- Text -->
+            <p class="card-text">A small city with a big heart, museums, royal palaces, a lively young music, bar scene and more....</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">3000 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+        <!-- Card -->
+        <div class="card mb-4">
+            <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/porto_large.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!-- Card content -->
+          <div class="card-body">
+      
+            <!-- Title -->
+            <h4 class="card-title">Porto</h4>
+            <!-- Text -->
+            <p class="card-text">modernist architecture,Museum of Contemporary Art, famous for fortified wine and more...</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">1600 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+      </div>
+    <!--/.Carousel Wrapper-->
+
+ <h3 style="margin:15px 0;">Categories</h3>
+         
+     
+ <div class="card-group" height= "320" width = "300" >
+
+    <!-- Card -->
+    <div class="card mb-4"  >
+      <div class="cellContainer">
+      <!-- Card image -->
+      <div class="view overlay">
+        
+        <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/venice_large.jpg" alt="Card image cap"
+        
+        alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+     
     
-      <!-- Indicators -->
+  
+      <!-- Card content -->
+      <div class="card-body">
+  
+        <!-- Title -->
+        <h4 class="card-title">Beaches</h4>
+        <!-- Text -->
+           <p class="card-text" > Its faultless beaches and unbelievably turquoise waters may bring new visitors to Antigua's shores and more...</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary btn-md">5600 AVIOS</button>
+  
+      </div>
+      <!-- Card content -->
+  
+    </div>
+    <!-- Card -->
+    </div>
+      <!-- Card -->
+      <div class="card mb-4">
+          <div class="cellContainer">
+          <!-- Card image -->
+          <div class="view overlay">
+            
+            <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/sardinia_large.jpg" alt="Card image cap"
+            
+            alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+         
+        
+      
+          <!-- Card content -->
+          <div class="card-body">
+      
+            <!-- Title -->
+            <h4 class="card-title">Adventure</h4>
+            <!-- Text -->
+               <p class="card-text" > Set across seven hills, with a medieval centre, it's a pretty place to enjoy a pizza in a piazza and more...</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">5100 AVIOS</button>
+      
+          </div>
+          <!-- Card content -->
+      
+        </div>
+        <!-- Card -->
+        </div>
+    <!-- Card -->
+    <div class="card mb-4">
+        <div class="cellContainer">
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/innsbruck_large.jpg" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <!-- Card content -->
+      <div class="card-body">
+        <!-- Title -->
+        <h4 class="card-title">Trekking</h4>
+        <!-- Text -->
+        <p class="card-text">Travellers can go 2,300m high above the city for skiing, hiking or simply the experience and more....</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary btn-md">5250 AVIOS</button>
+  
+      </div>
+      <!-- Card content -->
+  
+    </div>
+    <!-- Card -->
+    </div>
+    <!-- Card -->
+    <div class="card mb-4">
+        <div class="cellContainer">
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com//explorer-map/images/large/vienna_large.jpg" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <!-- Card content -->
+      <div class="card-body">
+  
+        <!-- Title -->
+        <h4 class="card-title">Vintage</h4>
+        <!-- Text -->
+        <p class="card-text">Old Masters meet modern art. Gothic design draws attention from boutique windows and more...</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary btn-md">6700 AVIOS</button>
+  
+      </div>
+      <!-- Card content -->
+  
+    </div>
+    <!-- Card -->
+    </div>
+  </div>
+  
+      </ng-container>
+        </div>
+      
+      
+
+
+
+
+<!-- Indicators
       <div class="carousalindicator">
       <ol class="carousel-indicators">
-        <li data-target="#multi-item-example-2" data-slide-to="0" class="active"></li>
-        <li data-target="#multi-item-example-2" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
       </ol>
     
       </div>
-      <!-- /.Indicators -->
-    </div>
-    <!--/.Carousel Wrapper-->
-
-    <h3 style="margin:15px 0;">Title</h3>
-     
-     <!-- <div *ngFor="let arr of testcitiesarr;let i=index">
-      {{i}}
-        <p>{{arr.name}}</p>
-        <p>{{arr.details}}</p>
-      </div>  -->
-    <!--Carousel Wrapper-->
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-    
-      <!--Controls
-      <div class="controls-top text-center">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-      </div>
-      Controls-->
-    
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-    
-        <!--First slide-->
-        <div class="carousel-item active" >
-    
-          <div class="col-md-3" *ngFor="let arr of testcitiesarr;let i=index">
-            <div class="card mb-2">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                alt="Card image cap">
-              <div class="card-body"> 
-                <h4 class="card-title">{{arr.name}}</h4>
-                <p class="card-text">{{arr.details}}</p>
-              </div>
-            </div>
-          </div>
-    
-    
-        </div>
-        <!--/.First slide-->
-    
-        <!--Second slide -->
+      
+    -->
+            <!--Second slide 
         <div class="carousel-item">
             <ng-container  *ngFor="let arr of testcitiesarr;let i=index">
           <div class="col-md-3" *ngIf="i >= 4 "> 
@@ -130,23 +541,21 @@
             </ng-container>
     
         </div>
-      <!--/.Second slide-->
-    
+        -->
+        <!-- <div *ngFor="let arr of testcitiesarr;let i=index">
+      {{i}}
+        <p>{{arr.name}}</p>
+        <p>{{arr.details}}</p>
+      </div>  -->
+        <!--Controls
+      <div class="controls-top text-center">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
       </div>
-      <!--/.Slides-->
-    
-      <!-- Indicators -->
-      <div class="carousalindicator">
-      <ol class="carousel-indicators">
-        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-        <li data-target="#multi-item-example" data-slide-to="1"></li>
-      </ol>
-    
+      Controls-->
+      <!--Controls
+      <div class="controls-top text-center">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
       </div>
-      <!-- /.Indicators -->
-    </div>
-
-   
-      </ng-container>
-        </div>
-            
+      Controls-->
