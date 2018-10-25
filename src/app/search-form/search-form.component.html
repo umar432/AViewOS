@@ -1,0 +1,26 @@
+<form class="apply-form-container" (ngSubmit)="onSubmit()" #searchForm="ngForm">
+  <mat-form-field>
+    <input matInput placeholder="From" name="fromLocation" [(ngModel)]="formData.fromLocation" 
+    #fromLocation="ngModel" required>
+    <mat-error *ngIf="!fromLocation.valid">From location is required!</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="To" name="toLocation" [(ngModel)]="formData.toLocation" 
+    #toLocation="ngModel" required>
+    <mat-error *ngIf="!toLocation.valid">Destination is required!</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type='number' min="0" max="100" placeholder="Adults">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type=number placeholder="Children">
+  </mat-form-field>
+  <button type="submit" class="btn btn-success" 
+      [disabled]="!searchForm.form.valid" [routerLink]="['/suggestions']">Submit</button>
+</form>
+<button type="button" class="btn btn-primary btn-md btn-back" [routerLink]="['']">Back to home</button>

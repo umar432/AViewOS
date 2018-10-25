@@ -12,12 +12,18 @@ import { MyAppComponentComponent } from './my-app-component/my-app-component.com
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentSearchComponent } from './component-search/component-search.component';
+import { SearchFormComponent } from './search-form/search-form.component';
+import { SearchSuggestionComponent } from './search-suggestion/search-suggestion.component';
+import { routing } from './app.routing';
+import { MatInputModule, MatFormFieldModule , MatNativeDateModule, MatDatepickerModule} from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyAppComponentComponent,
     ComponentSearchComponent,
+    SearchFormComponent,
+    SearchSuggestionComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,12 @@ import { ComponentSearchComponent } from './component-search/component-search.co
     FormsModule,
     CarouselModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    routing,
+    MatInputModule, 
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [DataServiceService],
   bootstrap: [AppComponent],
