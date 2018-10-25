@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SearchServiceService} from "../search-service.service";
 
 @Component({
   selector: 'app-search-form',
@@ -10,9 +11,17 @@ export class SearchFormComponent implements OnInit {
     fromLocation: '', 
     toLocation:'' 
   };
-  constructor() { }
+  constructor(private searchServiceService:SearchServiceService) { }
 
   ngOnInit() {
+    this.test();
+  }
+
+  test(){
+    this.searchServiceService.myService().subscribe(res => {
+
+      console.log(res);
+    })
   }
 
 }
