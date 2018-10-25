@@ -8,44 +8,44 @@
   </div>
   <ng-container *ngIf="cardexist">
 
-      <h3 style="margin:15px 0;">My Favourites</h3>
+    <h3 style="margin:15px 0;">My Favourites</h3>
 
 
 
-      <div class="card-group" height= "320" width = "300" >
+    <div class="card-group" height= "320" width = "300" >
 
-          <div class="card mb-4"  *ngFor="let arr of testcitiesarr">
-              <div class="cellContainer" >
-                  <!-- Card image -->
-                  <div class="view overlay">
+        <div class="card mb-4"  *ngFor="let arr of testcitiesarr">
+            <div class="cellContainer" >
+                <!-- Card image -->
+                <div class="view overlay">
 
-                      <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com/{{arr.images[0].src}}" alt="Card image cap"
+                    <img class="card-img-top" height= "265" width = "190" src="https://maps.avios.com/{{arr.images[0].src}}" alt="Card image cap"
 
-                           alt="Card image cap">
-                      <a href="#!">
-                          <div class="mask rgba-white-slight"></div>
-                      </a>
-                  </div>
+                         alt="Card image cap">
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
 
 
 
-                  <!-- Card content -->
-                  <div class="card-body">
+                <!-- Card content -->
+                <div class="card-body">
 
-                      <!-- Title -->
-                      <h4 class="card-title">{{arr.name}}</h4>
-                      <!-- Text -->
-                      <p class="card-text" > {{arr.details}}</p>
-                      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                      <button type="button" class="btn btn-primary btn-md">9000 AVIOS</button>
+                    <!-- Title -->
+                    <h4 class="card-title">{{arr.name}}</h4>
+                    <!-- Text -->
+                    <p class="card-text" > {{arr.details}}</p>
+                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                    <button type="button" class="btn btn-primary btn-md">9000 AVIOS</button>
 
-                  </div>
-                  <!-- Card content -->
+                </div>
+                <!-- Card content -->
 
-              </div>
-              <!-- Card -->
-          </div>
-          </div>
+            </div>
+            <!-- Card -->
+        </div>
+        </div>
 
 
 
